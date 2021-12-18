@@ -6,25 +6,40 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
 <body>
 
-  <div>
-    <img src="images/image-header-desktop.jpg" alt="">
-    <h1>Get insights that help your business grow.</h1>
-    <p>
-      Discover the benefits of data analytics and make better decisions regarding revenue, customer
-      experience, and overall efficiency.
-    </p>
-    <h2>10k+</h2> 
-    <p>companies</p>
-    <h2>314 </h2>
-    <p>templates</p>
-    <h2>12m+</h2>
-    <p>queries</p>
+  <div class="container">
+    <!-- <img src="images/image-header-desktop.jpg" alt=""> -->
+
+    <div class="content">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p class="main-P">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <div class="stats">
+        <div>
+          <h2>10k+</h2>
+          <p class="category">companies</p>
+        </div>
+        <div>
+          <h2>314 </h2>
+          <p class="category">templates</p>
+        </div>
+        <div>
+          <h2>12m+</h2>
+          <p class="category">queries</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
