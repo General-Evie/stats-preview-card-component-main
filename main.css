@@ -1,4 +1,3 @@
-
 html
 {
     display: flex;
@@ -7,6 +6,12 @@ html
     height: 100vh;
     background-color: hsl(233, 47%, 7%);
 }
+
+/* img
+{
+    float: right;
+    position: relative;
+} */
 
 h1, h2
 {
@@ -45,10 +50,9 @@ span
 
 .container
 {
-    background-image: url(images/image-header-desktop.jpg);
+    background: url(images/image-header-desktop.jpg);
     background-repeat: no-repeat;
-    background-position: right; 
-    box-shadow: hsla(277, 64%, 61%, .5);
+    background-position: right;  
     min-width: 70rem;
     background-color: hsl(244, 38%, 16%);
     border-radius: .5em;
@@ -90,3 +94,9 @@ span
 { 
     color: hsl(228, 45%, 44%); 
 }
+.overlay
+{
+    position: absolute;
+    background: hsl(277, 64%, 61%);
+}
+
