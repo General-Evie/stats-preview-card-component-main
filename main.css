@@ -33,23 +33,13 @@ span
     color: hsl(277, 64%, 61%);
 }
 
-.main-P
-{
-    font-family: 'Inter';
-    font-weight: 400;
-    max-width: 25rem;
-    line-height: 1.5em;
-    margin-bottom: 4rem;
-    color: hsla(0, 0%, 100%, 0.75);
-}
-
 .container
 {
     background: linear-gradient(0deg, rgba(92, 9, 139, 0.6), rgba(92, 7, 139, 0.6)), url(images/image-header-desktop.jpg);
     background-repeat: no-repeat;
     background-position: right; 
     background-size: 33rem; 
-    min-width: 70rem;
+    width: 70rem;
     background-color: hsl(244, 38%, 16%);
     border-radius: .5em;
 }
@@ -59,6 +49,16 @@ span
     padding: 3.5rem;
     padding-left: 5rem;
 } 
+
+.main-P
+{
+    font-family: 'Inter';
+    font-weight: 400;
+    max-width: 25rem;
+    line-height: 1.5em;
+    margin-bottom: 4rem;
+    color: hsla(0, 0%, 100%, 0.5);
+}
 
 .stats
 {
@@ -72,7 +72,7 @@ span
     font-weight: 400;
     font-size: .8em;
     text-transform: uppercase;
-    color: hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.5);
 }
 
 .attribution 
@@ -93,6 +93,56 @@ span
 
 @media (max-width: 375px)
 {
-    
+    html 
+    {
+        height: 130vh;
+    }
+
+    h1
+    {
+        font-size: 2rem;
+        padding-top: 17rem;
+    }
+
+    .container
+    {
+        text-align: center;
+        background: linear-gradient(0deg, rgba(92, 9, 139, 0.6), rgba(92, 7, 139, 0.6)), url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: top; 
+        background-size: 20rem 15rem; 
+        width: 20rem;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: .5em;
+    }
+
+    .content
+    {
+        padding: 0;
+    }
+
+    .main-P
+    {
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 18rem;
+    }
+
+    .stats
+    {
+        columns: 1;
+    }
+
+    .category
+    {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .attribution
+    {
+        bottom: -14.5rem;
+    }
 }
 
