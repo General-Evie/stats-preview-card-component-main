@@ -7,17 +7,12 @@ html
     background-color: hsl(233, 47%, 7%);
 }
 
-/* img
-{
-    float: right;
-    position: relative;
-} */
-
 h1, h2
 {
     
     font-family: 'Inter';
     font-weight: 700;
+    color: hsl(0, 0%, 100%);
 }
 
 h1
@@ -50,9 +45,10 @@ span
 
 .container
 {
-    background: url(images/image-header-desktop.jpg);
+    background: linear-gradient(0deg, rgba(92, 9, 139, 0.6), rgba(92, 7, 139, 0.6)), url(images/image-header-desktop.jpg);
     background-repeat: no-repeat;
-    background-position: right;  
+    background-position: right; 
+    background-size: 33rem; 
     min-width: 70rem;
     background-color: hsl(244, 38%, 16%);
     border-radius: .5em;
@@ -76,7 +72,7 @@ span
     font-weight: 400;
     font-size: .8em;
     text-transform: uppercase;
-    color: hsla(0, 0%, 100%, 0.6);
+    color: hsla(0, 0%, 100%, 0.75);
 }
 
 .attribution 
@@ -94,9 +90,9 @@ span
 { 
     color: hsl(228, 45%, 44%); 
 }
-.overlay
+
+@media (max-width: 375px)
 {
-    position: absolute;
-    background: hsl(277, 64%, 61%);
+    
 }
 
